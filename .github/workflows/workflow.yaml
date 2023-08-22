@@ -1,0 +1,19 @@
+name: Terraform
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout GitHub Action'
+        uses: actions/checkout@v2
+      
+      - uses: hashicorp/setup-terraform@v2
+      - run: ls -al
+      - run: terraform init
+      - run: terraform plan
