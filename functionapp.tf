@@ -3,7 +3,7 @@ module "function-app" {
   version = "7.5.1"
   # insert the 8 required variables here
 
-  client_name= 
+  client_name= ""
   environment= "dev"
   location= "westeu"
   location_short= ""
