@@ -7,7 +7,7 @@ module "function-app" {
   environment= "dev"
   location= "westeu"
   location_short= "westeu"
-  logs_destinations_ids= "123"
+  logs_destinations_ids= "Storage Account"
   os_type= "linux"
   resource_group_name= "rg-functionapp"
   stack= "java"
